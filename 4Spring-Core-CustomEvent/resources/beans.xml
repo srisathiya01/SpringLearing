@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="Employee" class="com.spring.core.EmployeeBean" init-method="init" destroy-method="destroy">
+	<property name="name" value="sathiya"></property>
+	</bean>
+	<bean id="customEventHandler" class="com.spring.core.event.CustomEventHandler"></bean>
+	<bean id="customEventPublisher" class="com.spring.core.publisher.CustomEventPublisher"></bean>
+	
+</beans>
